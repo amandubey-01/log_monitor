@@ -95,5 +95,5 @@ This project is licensed under the MIT License.
 ## Author
 
 **Aman Dubey**  
-[LinkedIn](https://www.linkedin.com/in/amandubey)
+[LinkedIn](https://www.linkedin.com/in/aman-dubey01/)
 
