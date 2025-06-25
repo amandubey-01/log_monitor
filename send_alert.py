@@ -55,11 +55,11 @@ def send_telegram_alert(message, token, chat_id):
     try:
         r = requests.post(url, data=payload)
         if r.status_code == 200:
-            print("✅ Telegram alert sent.")
+            print("Telegram alert sent.")
         else:
-            print("❌ Failed:", r.text)
+            print("Failed:", r.text)
     except Exception as e:
-        print("❌ Exception:", e)
+        print("Exception:", e)
 
 if __name__ == "__main__":
     df = parse_logs_to_df()
@@ -68,7 +68,7 @@ if __name__ == "__main__":
     warning_count = df[df["status"] == "WARNING"].shape[0]
     avg_proc_time = df[df["status"] == "INFO"]["time_taken"].mean()
 
-    message = "*🚨 Log Monitor Alert:*\n"
+    message = "*Log Monitor Alert:*\n"
     alert_triggered = False
 
     if error_count > 5:
